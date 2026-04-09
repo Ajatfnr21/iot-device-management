@@ -1,0 +1,25 @@
+# Iot Device Management Configuration
+
+app:
+  name: "Iot Device Management"
+  version: "2.0.0"
+  debug: false
+
+features:
+  - 1M devices
+  - Telemetry
+  - Commands
+
+tech_stack:
+  - MQTT
+  - TimescaleDB
+  - WebSocket
+
+server:
+  host: "0.0.0.0"
+  port: 8000
+  workers: 4
+
+logging:
+  level: INFO
+  format: "%(asctime)s | %(levelname)s | %(message)s"
